@@ -5,7 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
 
-body{
+html{
+   scroll-behavior: smooth;
+}
+
+.bookie-body{
    font-family: 'Raleway', sans-serif;
    background-color: white;
    padding:0;
@@ -403,9 +407,9 @@ nav a{
 
 @media screen and (max-width: 768px) {
 
-  
+
    .bookie-container{
-      width:90vw;
+      width:100vw;
       height:100vh;
    
    }
@@ -448,6 +452,11 @@ nav a{
    flex-direction: column;
    justify-content: center;
 
+  }
+
+  .bookie-main a, .activities a{
+   width:80%;
+  
   }
 
   .bookie-disponibles{
