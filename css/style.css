@@ -5,9 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
 
-html{
-   scroll-behavior: smooth;
-}
+
 
 .bookie-body{
    font-family: 'Raleway', sans-serif;
@@ -16,7 +14,7 @@ html{
    margin:0;
    line-height:1.6;
    width:100%;
-   height:100%;
+   height:100%;  
 }
 
 *{
@@ -29,7 +27,6 @@ h1,h2,h3,h4,h5{
    
    font-weight: 700;
    line-height:1.2;
-   
 }
 
 h1{
@@ -52,10 +49,6 @@ p{
   
 }
 
-main p{
-   font-size: 0.9rem;
-}
-
 ul{
    list-style-type:none;
 }
@@ -71,76 +64,67 @@ a{
 img{
    width: 100%;
    height: auto;
- 
   }
 
+  .flex{
+   display:flex;
+}
 
 /* Logo*/
 .logo{
    width: 4.063rem;
    height:1.18rem;
   }
-  
-  
+/* layouts */
 
-    /* btns + inputs */ 
+/* Desktop */
 
-    .search{
-      flex-direction: row;
-      justify-content: center;
-      max-width:362px;
-    }
+.bookie-container{
+   width:65rem;
+   max-width:1440px;
+   padding:1rem;
+   gap:1rem;
+   display:flex;
+   flex-direction: column;
+   margin:auto;
+   overflow:auto;
+   scroll-behavior: smooth;
+}
 
-    .search-label{
-      
-      background-color: #F2F2F2;
-      border-radius: 0.625rem;
-      border-top-right-radius: 0%;
-      border-bottom-right-radius: 0%;
-      padding: 10px;
-    }
+.bookie-header{
+   justify-content: space-between;
+}
 
-    input[type=search] {
+.bookie-form{
+   flex-direction: column;
+  }
+
+.bookie-main{
+   display:flex;
+   flex-direction:row;
+   gap:0.5rem;
+   clear:both;
+}
+
+.bookie-footer{
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+   
+ }
  
-      border: 0.07rem solid #F2F2F2;
-      font-weight: 700;
-      flex: 1;
-      padding: 10px;
-     
-    }
-
-    input[type=submit] {
-    
-      border: none;
-      background-color: #0065FC;
-      color: white;
-      padding: 10px;
-  
-      border-radius: 0.5rem;
-      border-top-left-radius: 0%;
-      border-bottom-left-radius: 0%;
-    }
-
-    form::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+.bookie-nav ul{
+   display:flex;
+}
 
 
-    form span{
-      padding:1rem;
-      margin-top:10rem;
-    }
+.bookie-filtres{
+ flex-direction: row;
+}
 
-    span i{
-      color:#0065FC;
-      margin-right:1rem;
-    }
+/*components*/
 
-
-/* Hyperlinks*/
-header a{
+ /* components bookie-nav */
+ .bookie-nav a{
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
    margin:5px;
@@ -150,16 +134,35 @@ header a{
    font-size:0.8rem;
 }
 
- header a:hover{
+ .bookie-nav a:hover{
    color:#0065FC;
    border-top: 3px solid #0065FC;
- 
 }
 
 
-.filtres-btns{
-   flex-wrap:wrap;
+.bookie-main i{
+   color:#0065FC;
+}
+
+.bookie-main p{
+   font-size: 0.9rem;
+}
+
+/*  form btns + inputs */ 
+
+/* components bookie-form */
+.filtres{
+   align-items: center;
    gap:0.5rem;
+}
+
+.filtres-groupe{
+   gap:0.5rem;
+}
+
+.filtres-btns{
+   gap:0.3rem;
+
 }
 
 .btn-filtres{
@@ -176,83 +179,66 @@ header a{
  
 }
 
-.flex{
-   display:flex;
-
-}
-
-
-
 .search , .filtres{
    margin-top:1rem;
 }
 
 .filtres i{
    color:#0065FC;
+   font-size:0.8rem;
    padding:0.5rem;
 }
 
-main i{
-   color:#0065FC;
-}
+    .search{
+      flex-direction: row;
+      justify-content: center;
+      max-width:362px;
+    }
+
+    .search-label{
+      background-color: #F2F2F2;
+      border-radius: 0.625rem;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
+      padding: 10px;
+    }
+
+    input[type=search] {
+      border: 0.07rem solid #F2F2F2;
+      font-weight: 700;
+      flex: 1;
+      padding: 10px;
+    }
+
+    input[type=submit] {
+      border: none;
+      background-color: #0065FC;
+      color: white;
+      padding: 10px;
+      border-radius: 0.5rem;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+    }
+
+    .bookie-form::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
 
+    .bookie-form p{
+      padding:0.5rem;
+      margin-top:1rem;
+    }
 
-/* layout */
-
-/* Desktop */
-
-.bookie-container{
-   width:66rem;
-   padding:1rem;
-   gap:1rem;
-   display:flex;
-   flex-direction: column;
-   margin:auto;
-   overflow:auto;
-}
+     .bookie-form p i{
+      color:#0065FC;
+      margin-right:0.5rem;
+    }
 
 
-.bookie-header.flex{
-
-   justify-content: space-between;
-
-}
-
-
-
-nav ul{
-   display:flex;
-}
-
-nav a{
-
-}
-
-
-
-.bookie-form.flex{
- flex-direction: column;
-
-}
-
-
-.bookie-filtres.flex{
- flex-direction: row;
-   
-}
-
-/*Main*/
-
-.bookie-main{
-   display:flex;
-   flex-direction:row;
-   gap:0.5rem;
-   clear:both;
-}
-
-
-.hérbergements{
+.hérbergements,.populaire{
    flex-direction:column;
    background-color: #F2F2F2;
    padding:1rem;
@@ -264,106 +250,17 @@ nav a{
 .hérbergements-groupe{
    flex-direction: row;
    gap:0.5rem;
-  
-}
-
-
-.hébergements-card {
-   flex-direction: column;
-   padding:0.5rem;
-
-}
-
-
-/*  cards*/
-
-.hébergements-card,.activities-card,.populaire-card{
-   background-color: white;
-   padding:0.5rem;
- /* Add shadows to create the "card" effect */
-  border-radius: 5px; 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.hébergements-card img{
-   border-top-left-radius: 0.2rem;
-   border-top-right-radius: 0.2rem;
-   width:175px;
-   height:100px;
-   image-rendering: pixelated;
- 
-}
-.hérbergements-description i{
-   font-size: 0.8rem;
-} 
-.populaire-description i{
-   font-size: 0.8rem;
-}
-
-.etoile-grey{
-   color:#F2F2F2;
-}
-
-/* popular H2*/
-
-.populaire{
-   flex-direction: column;
-   background-color: #F2F2F2;
-   padding:1rem;
-   gap:1rem;
-   border-radius:0.2rem;
-}
-
-
-.populaire-container{
-   justify-content: space-around;
 }
 
 .populaire-groupe{
    flex-direction:column;
    gap:0.5rem;
 }
-
-.populaire-card {
-   background-color: white;
-   padding:0.5rem;
-   border-radius:0.2rem;
-   flex-direction: row;
-   width:19.438rem;
-   height:7rem;
-   border-radius: 1.25rem;
+ 
+/* H2 and icon alignment*/
+.title-populaire{
+   justify-content: space-around;
 }
-
-
-
-.populaire-img{
-   border-top-left-radius: 0.2rem;
-   border-bottom-left-radius: 0.2rem;
-   width:5.563rem;
-   height:100%;
-   image-rendering: pixelated;
-
-  
-   
-}
-
-
-
-.populaire-description{
-
-   padding-left:0.5rem;
-   flex-direction:column;
-   justify-content: space-between;
-   
-}
-
-
-
-
-
-
-
 
 /*Activites*/
 
@@ -379,6 +276,64 @@ nav a{
    gap:1rem;
 }
 
+/*  cards*/
+
+.hébergements-card,.activities-card,.populaire-card{
+   background-color: white;
+   padding:0.5rem;
+ /* Add shadows to create the "card" effect */
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.hébergements-card {
+   flex-direction: column;
+   padding:0.5rem;
+}
+
+.hébergements-card img{
+   border-top-left-radius: 0.2rem;
+   border-top-right-radius: 0.2rem;
+   width:175px;
+   height:100px;
+   image-rendering: pixelated;
+ 
+}
+
+.populaire-card {
+   background-color: white;
+   padding:0.5rem;
+   border-radius:0.2rem;
+   flex-direction: row;
+   width:19.438rem;
+   height:7rem;
+   border-radius: 1.25rem;
+}
+
+.populaire-card img{
+   border-top-left-radius: 0.2rem;
+   border-bottom-left-radius: 0.2rem;
+   width:5.563rem;
+   height:100%;
+   image-rendering: pixelated;  
+}
+
+.populaire-description{
+   padding-left:0.5rem;
+   flex-direction:column;
+   justify-content: space-between;
+   
+}
+
+.hérbergements-description i,.populaire-description i{
+   font-size: 0.8rem;
+} 
+
+.etoile-grey{
+   color:#F2F2F2;
+}
+
   .activity-card{
    flex-direction:column;
   }
@@ -386,19 +341,10 @@ nav a{
   .activity-card img {
    border-top-left-radius: 1.25rem;
    border-top-right-radius: 1.25rem;
-   width:14.875rem;
+   width:12.875rem;
    height:20.782rem;
    image-rendering: pixelated;
- 
-  
-}
 
-.bookie-footer.flex{
-  justify-content: space-evenly;
-   background-color: #F2F2F2;
-  
-  
- 
 }
 
 
@@ -407,127 +353,11 @@ nav a{
 
 @media screen and (max-width: 768px) {
 
-
-   .bookie-container{
-      width:100vw;
-      height:100vh;
-   
-   }
-
-   .bookie-header.flex{
-      flex-direction: column;
-      align-items: center;
-   
-      
-   
-   }
-
-   .bookie-header{
-      flex-direction:column;
-      align-items: center;
-      
-   }
-
-  
-   .bookie-header nav{
-     padding:0.5rem;
-   }
-
-
-
-   .bookie-form{
-      align-items: center;
-      flex:1;
-    
-   }
-
-   .search{
-      padding:0.5rem;
-      
-   }
-
-
-
-.bookie-main{
-   flex-direction: column;
-   justify-content: center;
-
-  }
-
-  .bookie-main a, .activities a{
-   width:80%;
-  
-  }
-
-  .bookie-disponibles{
-   flex-direction:column;
-   align-items: center;
-  }
-
-  .hébergements{
-   order:1;
-   flex-direction: column;
-   align-items: center;
-  }
-
-  .hérbergements-groupe{
-   flex-direction: column;
-   align-items: center;
-  }
-
-  .hébergements-card img{
-   width:100%;
-   height:148px;
-
-  }
-
-  .hébergements-card{
-   width:100%;
-   margin:auto;
-  }
-
-  .populaire-groupe{
-   align-items: center;
-  }
-
-  .populaire-card{
-   width:100%;
-  }
-
-  .activity-groupe{
-   flex-direction: column;
-   align-items: center;
-  }
-
-
-
-  .activity-card{
-   width:100%;
-   
-  }
-
-  .activity-card img{
-   width:100%;
-   height:150px;
-   
-   
-  }
-
-  .bookie-footer.flex{
-  
-   flex-direction: column;
-   justify-content:center;
-   width:100%;
-   height:50%;
-   flex:0;
-   margin-top:0rem;
-}
-
-
-/*fonts*/
+   /*fonts*/
 
 h1{
    font-size: 1rem;
+   text-align: center;
 }
 
 h2{
@@ -559,12 +389,134 @@ main p{
  }
 
 
-
 .btn-filtres{
    font-size:0.8rem;
- 
 }
 
+/* layout mobile*/
+
+   .bookie-container{
+      width:100vw;
+      height:100vh;
+   
+   }
+
+   .bookie-header{
+      flex-direction:column;
+      align-items: center;
+   }
+
+   .bookie-nav{
+      padding:0.5rem;
+    }
+ 
+    .bookie-nav a{
+       font-size:1rem;
+       padding:0.5rem;
+     }
+
+   .bookie-nav a:hover{
+      border-top:none;
+      border-bottom: 3px solid #0065FC;
+    
+   }
+
+   .bookie-form {
+      flex-direction: column;
+      align-items: center;
+      flex:1;
+  }
+
+  .filtres-groupe{
+   flex-direction: column;
+   gap:0.5rem;
+   justify-content: flex-start;
+  }
+
+
+
+   .search{
+      padding:0.5rem;
+   }
+
+.bookie-main{
+   flex-direction:column-reverse;
+   justify-content: center;
+  }
+
+  .activities{
+   flex-direction: column;
+   align-items: center;
+  }
+
+
+  .bookie-footer.flex{
+  
+   flex-direction: column;
+   justify-content:center;
+   width:100%;
+   height:50%;
+   flex:0;
+   margin-top:0rem;
+}
+ /* image takes up 80% of the screen size*/
+  .bookie-main a{
+   width:70%;
+  }
+
+  .activities a{
+   width:100%;
+  }
+
+  .bookie-disponibles{
+   flex-direction:column;
+   align-items: center;
+
+  }
+
+  .hébergements{
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .populaire{
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .hérbergements-groupe{
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .populaire-card, .activity-card, .hébergements-card{
+   width:100%;
+  }
+
+  .hébergements-card img{
+   width:100%;
+   height:148px;
+  }
+
+  .populaire-groupe{
+   align-items: center;
+  }
+
+  .activity-groupe{
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .activity-card{
+   width:100%;
+   
+  }
+
+  .activity-card img{
+   width:100%;
+   height:150px;
+
+  }
 
  }
 

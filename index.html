@@ -12,7 +12,7 @@
     <div class="bookie-container flex">
         <header class="bookie-header flex">
             <img class="logo"src="./assets/logo/Booki.png" alt="Booki"/>
-             <nav>
+             <nav class="bookie-nav">
                 <a href="#bookie-herbergements">Hébergements</a>
                 <a href="#bookie-activities">Activitiés</a>
              </nav>
@@ -27,17 +27,22 @@
             </div>
             <div class="filtres flex">
               <h2>Filtres</h2>
-              <div class="filtres-btns flex">
-                <button class="btn-filtres"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                <button class="btn-filtres"><i class="fa-solid fa-person"></i>Familial</button>
-                <button class="btn-filtres"><i class="fa-solid fa-heart"></i>Romantique</button>
-                <button class="btn-filtres"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+              <div class="filtres-groupe flex">
+                <div class="filtres-btns flex">
+                  <button class="btn-filtres"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                  <button class="btn-filtres"><i class="fa-solid fa-person"></i>Familial</button>
+                </div>
+                <div class="filtres-btns flex">
+                  <button class="btn-filtres"><i class="fa-solid fa-heart"></i>Romantique</button>
+                  <button class="btn-filtres"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+                </div>
               </div>
+              
             </div>
             <div class="result">
              
-              <span><i class="fa-regular fa-circle-question"></i>Plus de 500 logements sont disponibles 
-                dans cette ville</span>
+              <p><i class="fa-regular fa-circle-question"></i>Plus de 500 logements sont disponibles 
+                dans cette ville</p>
             </div>
           </form>
           <main class="bookie-main flex">
@@ -171,7 +176,7 @@
                   <div class="populaire-groupe flex">
                     <a href="">
                     <div class="populaire-card flex">
-                        <img class="populaire-img" src="./assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="annie-spratt">
+                        <img src="./assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="annie-spratt">
                           <div class="populaire-description flex">
                             <div>
                               <h3>Auberge La Canebière</h3>
@@ -190,13 +195,16 @@
                     <a href="">
                     <div class="populaire-card flex">
                         <div>
-                          <img class="populaire-img" src="./assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="annie-spratt">
+                          <img  src="./assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="annie-spratt">
                         </div>
                       
                   
-                          <div class="populaire-description">
+                          <div class="populaire-description flex">
+                            <div>
                               <h3>Auberge La Canebière</h3>
                               <p>Nuit à partir de 25€</p>
+                            </div>
+                              
                               <div>
                                   <i class="fa-solid fa-star"></i>
                                   <i class="fa-solid fa-star"></i>
@@ -210,13 +218,16 @@
                     <a href="">
                     <div class="populaire-card flex">
                       <div>
-                        <img class="populaire-img" src="./assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="annie-spratt">
+                        <img src="./assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="annie-spratt">
                       </div>
                     
                 
-                        <div class="populaire-description">
+                        <div class="populaire-description flex">
+                          <div>
                             <h3>Auberge La Canebière</h3>
                             <p>Nuit à partir de 25€</p>
+                          </div>
+                           
                             <div>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
