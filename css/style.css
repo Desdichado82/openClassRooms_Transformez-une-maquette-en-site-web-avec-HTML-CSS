@@ -299,9 +299,7 @@ h1{
    gap:1rem;
   }
 
-  .populaire-groupe .carte{
-   flex:1;
-  } 
+ 
 
   .populaire-img{
    border-top-left-radius: 0.2rem;
@@ -332,6 +330,10 @@ h1{
 
   .populaire .carte{
    height: 7rem;
+  }
+
+  h5{
+   font-size:1rem;
   }
 
 
@@ -402,8 +404,13 @@ h1{
      }
 
      h1{
-      font-size: 0.8rem;
+      font-size: 0.9rem;
      }
+
+     h2{
+      font-size: 0.9rem;
+     }
+
 
      p{
       font-size: 0.7rem;
