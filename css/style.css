@@ -1,49 +1,41 @@
-/* global styles*/
 
+
+/*global styles*/
 
 /* googlefonts Raleway */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
 
-
-
-.bookie-body{
-   font-family: 'Raleway', sans-serif;
-   background-color: white;
-   padding:0;
-   margin:0;
-   line-height:1.6;
-   width:100%;
-   height:100%;  
-}
-
+/* Il est souvent utile de définir la taille des boîtes sur border-box pour mettre en page les éléments.
+ Cela facilite grandement la gestion des tailles des éléments et élimine généralement un certain nombre de pièges
+  que vous pouvez rencontrer lors de la mise en page de votre contenu.
+  Il garantit que la boîte de contenu se rétrécit pour faire de la place pour le rembourrage et les bordures.*/
 *{
+   font-family: 'Raleway', sans-serif;
+   line-height:1.6;
    box-sizing: border-box;
-   padding:0;
-   margin:0;
+   margin:0; 
 }
 
-h1,h2,h3,h4,h5{
+body{
+   width:100vw;
+   height:100vh;
+}
+
+img{
+   width: 100%;
+   height: 100%;
+
+}
+
+h1,h2,h3,h4,h5,h6{
    
    font-weight: 700;
-   line-height:1.2;
-}
-
-h1{
-   font-size: 1.2rem;
-}
-
-h2{
-   font-size: 1rem;
-}
-
-h3{
-   font-size: 0.9rem;
+   color:black;
+  
 }
 
 p{
-   font-family: 'Raleway', sans-serif;
-   font-size: 1rem;
    font-weight: 400;
    color:black;
   
@@ -53,78 +45,109 @@ ul{
    list-style-type:none;
 }
 
-
 a{
-   font-family: 'Raleway', sans-serif;
-   font-weight: 400;
-   text-decoration: none;
+   text-decoration:none;
    color:black;
 }
 
-img{
-   width: 100%;
-   height: auto;
-  }
 
-  .flex{
+/* Mis en page */
+
+.flex{
    display:flex;
-}
-
-/* Logo*/
-.logo{
-   width: 4.063rem;
-   height:1.18rem;
-  }
-/* layouts */
-
-/* Desktop */
-
-.bookie-container{
-   width:65rem;
-   max-width:1440px;
-   padding:1rem;
-   gap:1rem;
-   display:flex;
-   flex-direction: column;
-   margin:auto;
-   overflow:auto;
-   scroll-behavior: smooth;
-}
-
-.bookie-header{
-   justify-content: space-between;
-}
-
-.bookie-form{
-   flex-direction: column;
-  }
-
-.bookie-main{
-   display:flex;
-   flex-direction:row;
-   gap:0.5rem;
-   clear:both;
-}
-
-.bookie-footer{
-    justify-content: space-evenly;
-    background-color: #F2F2F2;
    
- }
- 
-.bookie-nav ul{
-   display:flex;
+}
+
+.column{
+   flex-direction: column;
+}
+
+.row{
+   flex-direction: row;
+}
+
+.wrapper{
+   width:70rem;
+   height:100vh;
+   margin:auto;
+   gap:1rem;
+   
+}
+
+.main-header{
+   justify-content: space-between;
+   align-items: center;
+   padding-top:0.5rem;
 }
 
 
-.bookie-filtres{
- flex-direction: row;
+
+.main-form{
+   gap:0.5rem;
+   
 }
+
+.rechercher,.filtres{
+   justify-content: flex-start;
+
+}
+
+.filtres{
+   align-items: center;
+}
+
+.container-main{
+   
+   gap:0.5rem;
+  
+}
+
+.hérbergements{
+   background-color: #F2F2F2;
+   gap:0.5rem;
+   padding:1rem;
+   border-radius: 1rem;
+
+}
+
+.hérbergements-groupe{
+   gap:0.5rem;
+   padding:0.5rem;
+
+}
+
+.hérbergements-groupe .carte{
+   flex-direction: column;
+  }
+
+
+  .populaire{
+   gap:0.5rem;
+   padding:1rem;
+   border-radius: 1rem;
+  }
+
+  .main-footer{
+   background-color: #F2F2F2;
+   justify-content: space-evenly;
+  }
+
+  .populaire i{
+   color:#0065FC;
+  }
 
 /*components*/
 
- /* components bookie-nav */
- .bookie-nav a{
+h1{
+   font-size: 1.2rem;
+   
+}
+.logo{
+   width:4.8rem;
+   
+  }
+
+  .main-nav a{
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
    margin:5px;
@@ -134,38 +157,12 @@ img{
    font-size:0.8rem;
 }
 
- .bookie-nav a:hover{
+ .main-nav a:hover{
    color:#0065FC;
    border-top: 3px solid #0065FC;
 }
 
-
-.bookie-main i{
-   color:#0065FC;
-}
-
-.bookie-main p{
-   font-size: 0.9rem;
-}
-
-/*  form btns + inputs */ 
-
-/* components bookie-form */
-.filtres{
-   align-items: center;
-   gap:0.5rem;
-}
-
-.filtres-groupe{
-   gap:0.5rem;
-}
-
-.filtres-btns{
-   gap:0.3rem;
-
-}
-
-.btn-filtres{
+.filtre-btn{
    background-color: white;
    border:1px #F2F2F2 solid;
    border-radius: 1rem;
@@ -174,14 +171,11 @@ img{
 
 }
 
-.btn-filtres:hover{
+.filtre-btn:hover{
    background-color: #DEEBFF;
  
 }
 
-.search , .filtres{
-   margin-top:1rem;
-}
 
 .filtres i{
    color:#0065FC;
@@ -189,12 +183,7 @@ img{
    padding:0.5rem;
 }
 
-    .search{
-      flex-direction: row;
-      justify-content: center;
-      max-width:362px;
-    }
-
+ 
     .search-label{
       background-color: #F2F2F2;
       border-radius: 0.625rem;
@@ -206,11 +195,23 @@ img{
     input[type=search] {
       border: 0.07rem solid #F2F2F2;
       font-weight: 700;
-      flex: 1;
       padding: 10px;
     }
 
     input[type=submit] {
+ 
+      border: none;
+      background-color: #0065FC;
+      color: white;
+      padding: 10px;
+      border-radius: 0.5rem;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      
+    }
+
+    .submit-mobile{
+      display:none;
       border: none;
       background-color: #0065FC;
       color: white;
@@ -220,305 +221,212 @@ img{
       border-bottom-left-radius: 0%;
     }
 
-    .bookie-form::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-
-    .bookie-form p{
-      padding:0.5rem;
-      margin-top:1rem;
-    }
-
-     .bookie-form p i{
+     .main-form p i{
       color:#0065FC;
-      margin-right:0.5rem;
     }
 
-
-.hérbergements,.populaire{
-   flex-direction:column;
-   background-color: #F2F2F2;
-   padding:1rem;
-   gap:1rem;
-   border-radius:0.2rem;
- 
-}
-
-.hérbergements-groupe{
-   flex-direction: row;
-   gap:0.5rem;
-}
-
-.populaire-groupe{
-   flex-direction:column;
-   gap:0.5rem;
-}
- 
-/* H2 and icon alignment*/
-.title-populaire{
-   justify-content: space-around;
-}
-
-/*Activites*/
-
-.activities{
-   flex-direction:column;
-   padding:1rem;
-   gap:0.5rem;
-}
-
-.activity-groupe{
-   flex-direction: row;
-   justify-content: center;
-   gap:1rem;
-}
-
-/*  cards*/
-
-.hébergements-card,.activities-card,.populaire-card{
-   background-color: white;
-   padding:0.5rem;
- /* Add shadows to create the "card" effect */
-  border-radius: 5px; 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.hébergements-card {
-   flex-direction: column;
-   padding:0.5rem;
-}
-
-.hébergements-card img{
-   border-top-left-radius: 0.2rem;
-   border-top-right-radius: 0.2rem;
-   width:175px;
-   height:100px;
-   image-rendering: pixelated;
- 
-}
-
-.populaire-card {
-   background-color: white;
-   padding:0.5rem;
-   border-radius:0.2rem;
-   flex-direction: row;
-   width:19.438rem;
-   height:7rem;
-   border-radius: 1.25rem;
-}
-
-.populaire-card img{
-   border-top-left-radius: 0.2rem;
-   border-bottom-left-radius: 0.2rem;
-   width:5.563rem;
-   height:100%;
-   image-rendering: pixelated;  
-}
-
-.populaire-description{
-   padding-left:0.5rem;
-   flex-direction:column;
-   justify-content: space-between;
-   
-}
-
-.hérbergements-description i,.populaire-description i{
-   font-size: 0.8rem;
-} 
-
-.etoile-grey{
-   color:#F2F2F2;
-}
-
-  .activity-card{
-   flex-direction:column;
-  }
-
-  .activity-card img {
-   border-top-left-radius: 1.25rem;
-   border-top-right-radius: 1.25rem;
-   width:12.875rem;
-   height:20.782rem;
-   image-rendering: pixelated;
-
-}
-
-
-
-/*media queries */
-
-@media screen and (max-width: 768px) {
-
-   /*fonts*/
-
-h1{
-   font-size: 1rem;
-   text-align: center;
-}
-
-h2{
-   font-size: 1rem;
-}
-
-h3{
-   font-size: 0.7rem;
-}
-
-p{
-   font-family: 'Raleway', sans-serif;
-   font-size: 0.8rem;
-   font-weight: 400;
-   color:black;
-  
-}
-
-main p{
-   font-size: 0.8rem;
-}
-
- span{
-   font-size:0.8rem
- }
-
- a{
-   font-size: 0.8rem;
- }
-
-
-.btn-filtres{
-   font-size:0.8rem;
-}
-
-/* layout mobile*/
-
-   .bookie-container{
-      width:100vw;
-      height:100vh;
-   
-   }
-
-   .bookie-header{
-      flex-direction:column;
-      align-items: center;
-   }
-
-   .bookie-nav{
-      padding:0.5rem;
+    .carte i{
+      color:#0065FC;
+      font-size:0.8rem;
     }
- 
-    .bookie-nav a{
-       font-size:1rem;
-       padding:0.5rem;
+
+    .etoile-grey{
+      color:#F2F2F2!important;
      }
 
-   .bookie-nav a:hover{
-      border-top:none;
-      border-bottom: 3px solid #0065FC;
-    
-   }
+     label{
+      font-weight: 700;
+     }
 
-   .bookie-form {
-      flex-direction: column;
-      align-items: center;
-      flex:1;
+ .container-main img, .activities img{
+   object-fit: cover;
+ }
+
+ .container-main h3{
+   font-size: 0.9rem;
+ }
+
+  .hébergement-img{
+   width:15rem;
+   height:7rem;
   }
 
-  .filtres-groupe{
-   flex-direction: column;
-   gap:0.5rem;
-   justify-content: flex-start;
+  .hébergement-img img{
+   border-top-left-radius: 0.2rem;
+   border-top-right-radius: 0.2rem;
+ 
   }
 
-
-
-   .search{
-      padding:0.5rem;
-   }
-
-.bookie-main{
-   flex-direction:column-reverse;
-   justify-content: center;
-  }
 
   .activities{
-   flex-direction: column;
-   align-items: center;
+   justify-content:space-evenly;
+   gap:0.5rem;
   }
 
+  .activities-groupe{
+   gap:0.5rem;
+  }
+  .activities img{
+   border-top-left-radius: 0.2rem;
+   border-top-right-radius: 0.2rem;
+ }
 
-  .bookie-footer.flex{
-  
-   flex-direction: column;
-   justify-content:center;
+ .activities-img{
    width:100%;
-   height:50%;
-   flex:0;
-   margin-top:0rem;
-}
- /* image takes up 80% of the screen size*/
-  .bookie-main a{
-   width:70%;
+   height:19rem;
   }
 
-  .activities a{
-   width:100%;
+  .activities h4{
+  font-size:0.9rem;
   }
 
-  .bookie-disponibles{
-   flex-direction:column;
-   align-items: center;
-
+  .carte{
+   background-color: white;
+   padding:0.5rem;
+   border-radius: 5px; 
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
   }
 
-  .hébergements{
-   flex-direction: column;
-   align-items: center;
-  }
 
   .populaire{
    flex-direction: column;
-   align-items: center;
-  }
-
-  .hérbergements-groupe{
-   flex-direction: column;
-   align-items: center;
-  }
-
-  .populaire-card, .activity-card, .hébergements-card{
-   width:100%;
-  }
-
-  .hébergements-card img{
-   width:100%;
-   height:148px;
+   background-color: #F2F2F2;
   }
 
   .populaire-groupe{
-   align-items: center;
-  }
-
-  .activity-groupe{
    flex-direction: column;
-   align-items: center;
+   gap:1rem;
   }
 
-  .activity-card{
-   width:100%;
+  .populaire-groupe .carte{
+   flex:1;
+  } 
+
+  .populaire-img{
+   border-top-left-radius: 0.2rem;
+   width:5.563rem;
+  
+  }
+
+  .populaire-title{
+   justify-content: space-between;
+   align-items:baseline;
    
   }
 
-  .activity-card img{
-   width:100%;
-   height:150px;
-
+  .populaire .description{
+   padding-left:0.5rem;
+   justify-content: space-around;
+   font-size: 0.8rem;
   }
 
- }
+  .populaire a, .hérbergements a , .activities a{
+   width:100%;
+  }
+
+
+.populaire h3{
+   font-size: 0.8rem;
+}
+
+  .populaire .carte{
+   height: 7rem;
+  }
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+   .wrapper{
+      width:45rem;
+      
+   }
+
+   .container-main{
+      flex-direction: column;
+   }
+
+   .populaire-groupe{
+      flex-direction: row;
+      
+   }
+
+   .populaire .carte{
+      flex:1;
+   }
+
+   .hébergement-img{
+      width:100%;
+      height:5rem;
+     }
+
+     .populaire-img{
+      width:7rem;
+      
+     }
+
+   .activities-img{
+      width:11rem;
+      height:15rem;
+     }
+
+     .description{
+      font-size:0.8rem;
+     }
+
+}
+
+@media (min-width: 140px) and (max-width: 767px){
+
+   .wrapper{
+      width:100vw;
+      height:100vh;
+      
+   }
+
+   .row{
+      flex-direction: column;
+   }
+
+   .hébergement-img, .activities-img {
+      width:100%;
+      height:6rem;
+     }
+
+     h1{
+      font-size: 0.9rem;
+     }
+
+     p{
+      font-size: 0.8rem;
+     }
+
+     .main-nav a{
+      font-size:1rem;
+      padding:0.5rem;
+    }
+   
+   .main-nav a:hover{
+     border-top:none;
+     border-bottom: 3px solid #0065FC;
+
+}
+
+.main-form,.container-main,.activities{
+   justify-content: center;
+   align-items:center;
+}
+
+.main-footer{
+   justify-content:first baseline;
+ 
+}
+
+}
+
+
+
 
 
 
