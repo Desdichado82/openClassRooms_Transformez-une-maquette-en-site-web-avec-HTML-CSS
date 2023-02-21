@@ -265,6 +265,7 @@ h1{
 
   .activities-groupe{
    gap:0.5rem;
+   justify-content: space-around;
   }
   .activities img{
    border-top-left-radius: 0.2rem;
@@ -272,7 +273,7 @@ h1{
  }
 
  .activities-img{
-   width:100%;
+   width:14rem;
    height:19rem;
   }
 
@@ -319,7 +320,7 @@ h1{
    font-size: 0.8rem;
   }
 
-  .populaire a, .hérbergements a , .activities a{
+  .populaire a, .hérbergements a {
    width:100%;
   }
 
@@ -382,7 +383,8 @@ h1{
 @media (min-width: 140px) and (max-width: 667px){
 
    .wrapper{
-      width:30rem;
+      width:100vw;
+      height:100vh;
       
    }
 
