@@ -377,11 +377,19 @@ h1{
 
 }
 
-@media (min-width: 140px) and (max-width: 767px){
+@media (min-width: 140px) and (max-width: 667px){
 
    .wrapper{
       width:30rem;
       
+   }
+
+   .main-header{
+      padding:1rem;
+   }
+
+   .main-nav{
+      margin-top:1rem;
    }
 
    .row{
@@ -394,11 +402,11 @@ h1{
      }
 
      h1{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
      }
 
      p{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
      }
 
      .main-nav a{
@@ -412,7 +420,9 @@ h1{
 
 }
 
-
+.container-main{
+   flex-direction: column-reverse;
+}
 
 .main-form{
    justify-content: center;
@@ -424,6 +434,16 @@ h1{
    justify-content:first baseline;
  
 }
+
+.submit-mobile{
+   display:block;
+}
+
+.submit-desktop{
+   display:none;
+}
+
+
 
 }
 
