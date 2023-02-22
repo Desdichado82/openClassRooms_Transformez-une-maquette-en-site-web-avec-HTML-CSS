@@ -103,9 +103,7 @@ a{
 }
 
 .container-main{
-   
    gap:0.5rem;
-  
 }
 
 .hérbergements{
@@ -274,13 +272,12 @@ h1{
    justify-content: space-around;
   }
   .activities img{
-   border-top-left-radius: 0.2rem;
-   border-top-right-radius: 0.2rem;
+   border-radius:1.25rem;
  }
 
  .activities-img{
-   width:14rem;
-   height:19rem;
+   width:15rem;
+   height:27.75rem;
   }
 
   .activities h4{
@@ -292,6 +289,13 @@ h1{
    padding:0.5rem;
    border-radius: 5px; 
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+  }
+
+  .carte-activites{
+   border-radius:1.25rem;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   background-color: white;
    transition: 0.3s;
   }
 
@@ -444,7 +448,7 @@ h1{
  
 }
 
-.container-main, .activities{
+.populaire, .activities{
    justify-content: center;
    align-items:center;
 }
