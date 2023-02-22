@@ -20,7 +20,6 @@
             <nav class="main-nav">
                <a href="#bookie-hébergements">Hébergements</a>
                <a href="#bookie-activities">Activities</a>
-               </ul>
             </nav>
          </header>
          <!-- FORM-->
@@ -28,14 +27,14 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="rechercher flex">
-               <label  class="search-label"for="search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
-               <input type="search" name="search" id="search-bar" placeholder="Marseille, France">
+               <label  class="search-label" for="search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
+               <input id="search" type="search" name="search" id="search-bar" placeholder="Marseille, France">
                <input  class="submit-desktop" type="submit" value="Rechercher">
                <button class="submit-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="filtres flex row">
                <label for="filtres">Filtres</label>
-               <div class="btn-groupe">
+               <div id="filtres" class="btn-groupe">
                   <button class="filtre-btn"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
                   <button class="filtre-btn"><i class="fa-solid fa-person"></i>Familial</button>
                </div>
@@ -54,7 +53,7 @@
          <div class="container-main flex row">
             <main id="bookie-hébergements" class="hérbergements flex column">
                <h2>Hébergements à Marseille</h2>
-               <section class="hérbergements-groupe flex row">
+               <div class="hérbergements-groupe flex row">
                   <a href="./assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                      <article class="carte flex column">
                         <div class="hébergement-img">
@@ -115,8 +114,8 @@
                         </div>
                      </article>
                   </a>
-               </section>
-               <section class="hérbergements-groupe flex row">
+                </div>
+               <div class="hérbergements-groupe flex row">
                   <a href="./assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                      <article class="carte flex">
                         <div class="hébergement-img">
@@ -177,7 +176,7 @@
                         </div>
                      </article>
                   </a>
-               </section>
+                </div>
                <h3>Afficher plus</h3>
             </main>
             <aside id="bookie-populaire" class="populaire flex">
@@ -250,7 +249,7 @@
             </aside>
          </div>
     <!-- ACTIVITY -->
-         <div id="bookie-activities" class=" activities flex column">
+         <section id="bookie-activities" class=" activities flex column">
             <h2>Activités à Marseille</h2>
             <div class="activities-groupe flex row">
                <a href="./assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
@@ -294,7 +293,7 @@
                   </article>
                </a>
             </div>
-         </div>
+          </section>
          <!-- FOOTER-->
          <footer id="bookie-footer" class=" main-footer flex row">
             <div class="flex column">
@@ -314,7 +313,6 @@
                <a href="">Nous contacter</a>
             </div>
          </footer>
-      </div>
       </div>
    </body>
 </html>
