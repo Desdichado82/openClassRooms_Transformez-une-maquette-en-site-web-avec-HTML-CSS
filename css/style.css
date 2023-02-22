@@ -25,7 +25,6 @@ body{
    width:100vw;
    height:100vh;
    background-color: white;
-   padding:1rem;
 }
 
 img{
@@ -272,7 +271,8 @@ h1{
    justify-content: space-around;
   }
   .activities img{
-   border-radius:1.25rem;
+   border-top-left-radius:1.25rem;
+   border-top-right-radius:1.25rem;
  }
 
  .activities-img{
@@ -293,7 +293,8 @@ h1{
   }
 
   .carte-activites{
-   border-radius:1.25rem;
+   border-top-right-radius: 1.25rem;
+   border-top-left-radius: 1.25rem;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    background-color: white;
    transition: 0.3s;
@@ -392,9 +393,14 @@ h1{
 
 @media (min-width: 140px) and (max-width: 667px){
 
-   .wrapper{
+   body{
       width:100vw;
       height:100vh;
+   }
+
+   .wrapper{
+      width:22rem;
+      margin:auto;
       
    }
 
@@ -409,6 +415,14 @@ h1{
    .row{
       flex-direction: column;
    }
+
+   .populaire a, .hérbergements a {
+      width:90%;
+     }
+
+     .activities-groupe a{
+      width:70%;
+     }
 
    .hébergement-img, .activities-img {
       width:100%;
@@ -448,7 +462,7 @@ h1{
  
 }
 
-.populaire, .activities{
+.hérbergements-groupe,.populaire-groupe, .activities-groupe{
    justify-content: center;
    align-items:center;
 }
