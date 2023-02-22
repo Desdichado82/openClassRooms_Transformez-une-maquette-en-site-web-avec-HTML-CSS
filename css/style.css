@@ -17,9 +17,15 @@
    margin:0; 
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 body{
    width:100vw;
    height:100vh;
+   background-color: white;
+   padding:1rem;
 }
 
 img{
@@ -300,8 +306,6 @@ h1{
    gap:1rem;
   }
 
- 
-
   .populaire-img{
    border-top-left-radius: 0.2rem;
    width:5.563rem;
@@ -380,6 +384,8 @@ h1{
 
 }
 
+/* Media query for mobile */
+
 @media (min-width: 140px) and (max-width: 667px){
 
    .wrapper{
@@ -406,11 +412,15 @@ h1{
      }
 
      h1{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
      }
 
      h2{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+     }
+
+     h3{
+      font-size:0.75rem;
      }
 
 
@@ -431,6 +441,12 @@ h1{
 
 .container-main{
    flex-direction: column-reverse;
+ 
+}
+
+.container-main, .activities{
+   justify-content: center;
+   align-items:center;
 }
 
 .main-form{
