@@ -261,6 +261,11 @@ h1{
  
   }
 
+  .populaire img{
+   border-top-left-radius: 1.25rem;
+   border-bottom-left-radius: 1.25rem;
+  }
+
 
   .activities{
    justify-content:space-evenly;
@@ -298,6 +303,7 @@ h1{
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    background-color: white;
    transition: 0.3s;
+   padding:0.5rem;
   }
 
 
