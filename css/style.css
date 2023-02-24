@@ -99,6 +99,7 @@ a{
 
 .filtres{
    align-items: center;
+   gap:1rem;
 }
 
 .container-main{
@@ -114,8 +115,8 @@ a{
 }
 
 .hérbergements-groupe{
-   gap:0.5rem;
-   padding:0.5rem;
+   gap:1rem;
+   padding:1rem;
 
 }
 
@@ -273,8 +274,9 @@ h1{
   }
 
   .activities-groupe{
-   gap:0.5rem;
+   gap:1rem;
    justify-content: space-around;
+   padding:1rem;
   }
   .activities img{
    border-top-left-radius:1.25rem;
@@ -315,6 +317,7 @@ h1{
   .populaire-groupe{
    flex-direction: column;
    gap:1rem;
+   padding:0.5rem;
   }
 
   .populaire-img{
@@ -360,7 +363,7 @@ h1{
   .btn-groupe{
    flex-direction: row;
    justify-content: space-evenly;
-   gap:1rem;
+   gap:1.5rem;
    margin-left: 0.5rem;
   }
 
