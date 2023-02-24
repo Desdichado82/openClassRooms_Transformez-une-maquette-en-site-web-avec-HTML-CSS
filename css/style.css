@@ -352,8 +352,8 @@ h1{
    font-size:1rem;
   }
 
-  .carte-activites .description{
-   padding:0.5rem;
+  .carte-activites .description, .hérbergements-groupe .description{
+   padding:0.6rem;
   
   }
 
@@ -416,7 +416,7 @@ h1{
 
 /* Media query for mobile */
 
-@media (min-width: 140px) and (max-width: 667px){
+@media (max-width: 667px){
 
    body{
       width:100vw;
