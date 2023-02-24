@@ -72,7 +72,7 @@ a{
 }
 
 .wrapper{
-   width:70rem;
+   width:69rem;
    height:100vh;
    margin:auto;
    gap:1rem;
@@ -109,14 +109,14 @@ a{
 .hérbergements{
    background-color: #F2F2F2;
    gap:0.5rem;
-   padding:1rem;
+   padding:0.5rem;
    border-radius: 1rem;
 
 }
 
 .hérbergements-groupe{
    gap:1rem;
-   padding:1rem;
+   padding:0.5rem;
 
 }
 
@@ -127,7 +127,7 @@ a{
 
   .populaire{
    gap:0.5rem;
-   padding:1rem;
+   padding:0.5rem;
    border-radius: 1rem;
   }
 
@@ -270,7 +270,7 @@ h1{
 
   .activities{
    justify-content:space-evenly;
-   gap:0.5rem;
+   gap:1rem;
   }
 
   .activities-groupe{
@@ -411,8 +411,10 @@ h1{
 
      
   .activities h4{
-   font-size:0.7rem;
+   font-size:0.6rem;
    }
+
+ 
 
     
 }
