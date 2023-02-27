@@ -20,9 +20,9 @@
          <section class=" hero flex">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form  class="search-form flex" method="get" action="">
-               <label for="researcher" class="search-label"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
-               <input type="search" name="" id="rechercher" placeholder="Marseille, France">
+            <form  class="search-form flex" method="get" action="./action.php">
+               <label class="search-label"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
+               <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France">
                <input type="submit" value="Rechercher" class="rechercher">
                <button class="submit-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -168,7 +168,7 @@
                <a href="" class="affiche-plus"> <strong>Afficher plus</strong></a>
             </section>
             <section class="populaire flex bg-gris p-2">
-               <span class=" populaire-title flex"><h2>Les plus populaire</h2><i class="fa-solid fa-chart-line bleu"></i></span>
+               <div class=" populaire-title flex"><h2>Les plus populaire</h2><i class="fa-solid fa-chart-line bleu"></i></div>
                <div class="groupe flex">
                   <a href="#">
                      <article class=" carte flex row">
