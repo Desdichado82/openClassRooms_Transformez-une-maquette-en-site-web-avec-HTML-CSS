@@ -485,6 +485,13 @@ margin:auto;
    align-items: center;
 }
 
+.rechercher{
+   display: none;
+}
+
+.submit-mobile{
+   display:block;
+}
 .filtres-section{
    justify-content: center;
    flex-direction: column;
