@@ -410,7 +410,7 @@ margin:auto;
 
 /* Media query for mobile */
 
-@media (min-width: 768px) and (max-width: 1025px){
+@media (min-width: 768px) and (max-width: 992px){
 .main-content{
    flex-direction: column;
    justify-content: center;
