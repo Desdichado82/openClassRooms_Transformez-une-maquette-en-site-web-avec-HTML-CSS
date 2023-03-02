@@ -132,10 +132,11 @@ main i{
    font-size:1rem;
 }
 
-main span{
+main span,.affiche{
    font-size:1.125rem;
    font-weight:700;
 }
+
 
 .menu a{
   
