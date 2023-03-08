@@ -102,6 +102,10 @@ main i{
    font-size:1rem;
 }
 
+em{
+   font-weight: 700;
+}
+
 
 .main-header,.intro, .main-content,.activities{
    margin-bottom:1rem;
@@ -549,7 +553,7 @@ padding-right:0.5rem;
 @media (max-width: 767px){
 
    h1,h2{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
    }
 
    .main-content p, .intro p, .info{
@@ -588,6 +592,7 @@ padding-right:0.5rem;
 
    .info{
       align-items: first baseline;
+      margin-top: 1.2rem;
     
    }
 
@@ -700,8 +705,29 @@ padding-right:0.5rem;
    
    }
 
+   .hébergement-groupe .card-a:nth-of-type(1){
+      order:1;
+   }
 
+   .hébergement-groupe .card-b:nth-of-type(2){
+      order:6;
+   }
 
+   .hébergement-groupe .card-c:nth-of-type(3){
+      order:3;
+   }
+
+   .hébergement-groupe .card-d:nth-of-type(4){
+      order:4;
+   }
+
+   .hébergement-groupe .card-e:nth-of-type(5){
+      order:2;
+   }
+
+   .hébergement-groupe .card-f:nth-of-type(6){
+      order:5;
+   }
 
 
    .main-footer{
