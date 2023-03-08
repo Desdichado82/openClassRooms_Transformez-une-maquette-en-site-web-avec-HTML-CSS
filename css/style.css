@@ -205,10 +205,9 @@ padding-bottom:0px;
 /*footer*/
 
 .main-footer{
-   flex-direction: row;
+   display:grid;
    gap:0.938rem;
-   justify-content: space-evenly;
-   align-content: center;
+   grid-template-columns: repeat(3,1fr);
    background-color: #F2F2F2;
    padding: 1.875rem;
 }
@@ -466,6 +465,8 @@ padding-right:0.5rem;
 
 /* activites components */
 
+/* footer components */
+
 
 @media (min-width: 768px) and (max-width: 992px){
 
@@ -505,7 +506,6 @@ padding-right:0.5rem;
       grid-template-rows:1fr;
       gap:0.938rem;
    }
-
 
 
    .activities-card img{
@@ -599,6 +599,7 @@ padding-right:0.5rem;
   .hébergement-groupe.card{
    max-height:12.938rem;
   }
+
 
   .activities-groupe{
    grid-template-columns: 1fr;
@@ -699,10 +700,8 @@ padding-right:0.5rem;
 
 
    .main-footer{
-      flex-direction:column;
-
-      justify-content: flex-start;
-   
+      grid-template-columns:1fr;
+  
    }
 
    .main-footer h3{
